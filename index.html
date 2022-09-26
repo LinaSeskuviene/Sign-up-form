@@ -24,7 +24,7 @@
         <div class="required">* pažymėtus laukus užpildyti būtina</div>
         <form action="" method="" id="form">
           <div class="inputs">
-            <label for="first-name">Vardas</label>
+            <label for="first-name">*Vardas</label>
             <input type="text" name="first-name" id="first-name" required />
             <label for="email">*Elektroninis paštas:</label>
             <input type="email" name="email" id="email" required />
@@ -36,6 +36,7 @@
               minlength="6"
               placeholder="6 or more characters"
               required
+              onchange="match();"
             />
             <p id="mismatch"></p>
           </div>
@@ -43,7 +44,7 @@
             <label for="last-name">*Pavardė:</label>
             <input type="text" name="last-name" id="last-name" required />
             <label for="tel">Telefono numeris:</label>
-            <input type="tel" name="tel" id="tel" required />
+            <input type="tel" name="tel" id="tel" />
             <label for="password-again">*Pakartokite slaptažodį:</label>
             <input
               type="password"
@@ -52,11 +53,11 @@
               minlength="6"
               placeholder="Confirm password"
               required
+              onchange="match();"
             />
           </div>
         </form>
       </div>
-
       <div id="submit">
         <div class="button-div">
           <button form="form" type="submit" id="submit-button" disabled>

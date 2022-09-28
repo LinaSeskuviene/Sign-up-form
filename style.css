@@ -1,7 +1,7 @@
 body {
   display: flex;
   justify-content: center;
-  margin: auto;
+  margin: 0px 20px;
 }
 
 .left-side {
@@ -20,21 +20,25 @@ body {
 }
 
 .logo {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
   opacity: 0.65;
   border: none;
+  background-color: green;
+  margin-top: 50px;
 }
 
 #image {
-  width: 150px;
+  width: 80px;
   object-fit: cover;
 }
 
 .image-text {
   color: white;
-  font: 60px bold;
+  font: 40px bold;
 }
 
 .inputs {
@@ -44,5 +48,36 @@ body {
 form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 15px;
+}
+.form-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.required {
+  margin-bottom: 20px;
+}
+label {
+  font-weight: 800;
+}
+#mismatch {
+  font-size: 12px;
+  color: red;
+}
+#submit-button {
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 800;
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+input:invalid:focus {
+  box-shadow: 0 0 5pt 2pt red;
+}
+
+input:valid:focus {
+  box-shadow: 0 0 5pt 2pt green;
 }

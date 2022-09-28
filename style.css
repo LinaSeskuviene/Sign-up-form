@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.left-side {
+  width: 33%;
+  height: 500px;
+  background-image: url(teemu-paananen-OOE4xAnBhKo-unsplash.jpg);
+  background-size: cover;
+  margin-right: 30px;
+}
+
+.form-container {
+  width: 67%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  margin: 50px;
+  opacity: 0.65;
+  border: none;
+}
+
+#image {
+  width: 150px;
+  object-fit: cover;
+}
+
+.image-text {
+  color: white;
+  font: 60px bold;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
